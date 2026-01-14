@@ -1,0 +1,13 @@
+{
+  "name": "gitlab-runner-api",
+  "version": "1.0.0",
+  "description": "Simple Node.js API for /rest/api/2/search endpoint",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
