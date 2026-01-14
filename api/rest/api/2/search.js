@@ -1,10 +1,5 @@
 export default function handler(req, res) {
-  const issues = {
-  "expand": "names,schema",
-  "startAt": 0,
-  "maxResults": 20,
-  "total": 2,
-  "issues": [
+  const issues = [
     {
       "expand": "",
       "id": "10001",
@@ -49,8 +44,7 @@ export default function handler(req, res) {
         "description": "Migrate DB schema to v2."
       }
     }
-  ]
-};
+  ];
 
   res.status(200).json({
     expand: "names,schema",
@@ -60,5 +54,3 @@ export default function handler(req, res) {
     issues
   });
 }
-
-
