@@ -66,5 +66,6 @@ export default function handler(req, res) {
     // ممكن تزود باقي الـ issues بنفس الشكل اللي وريتهولي
   ];
 
-  res.status(200).json({ issues });
+  res.status(200).json({ issues,isLast:true });
 }
+
